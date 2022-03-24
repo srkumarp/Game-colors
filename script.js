@@ -54,9 +54,9 @@ function showuser() {
     var randomChosenNumber = nextseq();
     var randomChosenColour = a[randomChosenNumber];
     gamePattern.push(randomChosenColour);
-    $("." + randomChosenNumber).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
     const audio = new Audio("sounds/" + gamePattern[gamePattern.length - 1] + ".mp3");
     audio.play();
+    $("." + randomChosenNumber).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
     chance=1;
 }, 1000);
 
