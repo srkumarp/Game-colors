@@ -42,7 +42,7 @@ $('.btn').click(function(event) {
 });
 $(document).on("keydown", function(event) {
   if (event.which == 65 && chance == 0) {
-    $("h1").text("Press A to start the game");
+    $("h1").text("Game started");
     $("h2").text("Score: "+score);
     gamePattern=[];
     showuser();
